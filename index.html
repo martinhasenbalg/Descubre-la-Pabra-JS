@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubrir la Palabra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b5a4d2640.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="ingresar">
+        <img src="logo.png" alt="logo" class="logo">
+        <input type="text" name="jugador" id="jugador-input" placeholder="Ingresa tu nombre">
+        <button class="empezar-btn">Empezar</button> <br>
+        <a href="https://github.com/martinhasenbalg" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
+    </div>
+   
+
+    <div class="wrapper" style="display: none">
+        <h2>Jugador:  <span class="nombreJugador"></span></h2>
+        <h2>Ganados: <span class="ganados">0</span> - Perdidos: <span class="perdidos">0</span></h2> 
+        <h2>Categoría: <br><span class="categoria"></span></h2> 
+        <div class="content">
+            <input type="text" class="typing-input" maxlength="1">
+            <div class="inputs"></div>
+            <div class="details">
+                <p class="hint"><span></span></p>
+                <p class="guess-left">Aciertos Restantes: <span></span></p>
+                <p class="wrong-letter">Letra incorrecta: <span></span></p>
+            </div>
+            <div class="botones">
+                <button class="reset-btn">Nueva palabra!</button>
+                <button class="salir-btn">Salir!</button>
+            </div>
+        </div>
+    </div>
+
+<script src="js/word.js"></script>
+<script src="js/script.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
